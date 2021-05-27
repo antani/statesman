@@ -30,7 +30,7 @@ shards:
     - driverClass: org.mariadb.jdbc.Driver
       user: root
       password: password 
-      url: jdbc:mariadb://mariadb_1/statesman_shard1?createDatabaseIfNotExist=true
+      url: jdbc:mariadb://eksaath-statesman-prod-db.conjdswef2ev.ap-south-1.rds.amazonaws.com:3306/eksaath-statesman-prod-db?createDatabaseIfNotExist=true
       properties:
         charSet: UTF-8
         hibernate.dialect: org.hibernate.dialect.MariaDBDialect
@@ -46,7 +46,7 @@ shards:
     - driverClass: org.mariadb.jdbc.Driver
       user: root
       password: password
-      url: jdbc:mariadb://mariadb_2/statesman_shard2?createDatabaseIfNotExist=true
+      url: jdbc:mariadb://localhost:3306/statesman_shard2?createDatabaseIfNotExist=true
       properties:
         charSet: UTF-8
         hibernate.dialect: org.hibernate.dialect.MariaDBDialect
